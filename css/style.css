@@ -1,0 +1,158 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Georgia&display=swap');
+
+/* Global Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* Header style */
+header h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #4a2c2a; /* A warm brown */
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #7b3f00;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Wrapper to create two rows */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each section takes 45% width (two columns on desktop) */
+.wrapper > section {
+  flex: 1 1 45%;
+  background-color: #f9f4f1;
+  border: 2px solid #d3c2b3;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 2px 2px 5px rgba(150, 120, 90, 0.2);
+}
+
+/* Images */
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Headings */
+h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #7b3f00;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d3c2b3;
+  padding-bottom: 5px;
+}
+
+h3.rate {
+  margin-top: 0;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Form styling */
+form {
+  margin-top: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Number inputs styling */
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Radio buttons inside fieldset */
+fieldset {
+  border: 1.5px solid #7b3f00;
+  border-radius: 5px;
+  padding: 10px 15px;
+  max-width: 270px;
+  background-color: #fff8f0;
+}
+
+legend {
+  font-weight: bold;
+  color: #7b3f00;
+  padding: 0 5px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+label[for="easy"],
+label[for="med"],
+label[for="hard"] {
+  margin-right: 15px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* Directions */
+ol li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: right;
+  margin-top: 30px;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .wrapper > section {
+    flex: 1 1 100%;
+  }
+}
